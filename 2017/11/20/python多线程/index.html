@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <title>Hexo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+        <meta name="keywords" content="" />
+    
+    <meta name="description" content="博客园多线程学习：https://www.cnblogs.com/tqsummer/archive/2011/01/25/1944771.html一、python中线程的使用python中使用线程有两种方式：函数或者类来包装线程对象 1、函数式：调用调用thread模块中的start_new_thread()函数来产生新线程。如下例：123456789101112131415import time">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://geniustesda.github.io/2017/11/20/python多线程/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="博客园多线程学习：https://www.cnblogs.com/tqsummer/archive/2011/01/25/1944771.html一、python中线程的使用python中使用线程有两种方式：函数或者类来包装线程对象 1、函数式：调用调用thread模块中的start_new_thread()函数来产生新线程。如下例：123456789101112131415import time">
+<meta property="og:updated_time" content="2017-11-20T14:55:34.394Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="博客园多线程学习：https://www.cnblogs.com/tqsummer/archive/2011/01/25/1944771.html一、python中线程的使用python中使用线程有两种方式：函数或者类来包装线程对象 1、函数式：调用调用thread模块中的start_new_thread()函数来产生新线程。如下例：123456789101112131415import time">
+    
+
+    
+        <link rel="alternate" href="/" title="Hexo" type="application/atom+xml" />
+    
+
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/titillium-web/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/2.0.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+    
+
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">Inici</a>
+                                </li>
+                            
+                                        
+                                    
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/about/index.html">Quant a</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Cercar" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'categories',
+            TAGS: 'etiquetes',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    Sense categoria
+    </h1>
+</div>
+                        <div class="main-body-content">
+                            <article id="post-python多线程" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+        <a href="/2017/11/20/python多线程/" class="article-date">
+            <time datetime="2017-11-20T14:55:34.379Z" itemprop="datePublished">2017-11-20</time>
+        </a>
+    </div>
+
+                
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <h3 id="博客园多线程学习：https-www-cnblogs-com-tqsummer-archive-2011-01-25-1944771-html"><a href="#博客园多线程学习：https-www-cnblogs-com-tqsummer-archive-2011-01-25-1944771-html" class="headerlink" title="博客园多线程学习：https://www.cnblogs.com/tqsummer/archive/2011/01/25/1944771.html"></a>博客园多线程学习：<a href="https://www.cnblogs.com/tqsummer/archive/2011/01/25/1944771.html" target="_blank" rel="external">https://www.cnblogs.com/tqsummer/archive/2011/01/25/1944771.html</a></h3><h4 id="一、python中线程的使用"><a href="#一、python中线程的使用" class="headerlink" title="一、python中线程的使用"></a>一、python中线程的使用</h4><p>python中使用线程有两种方式：函数或者类来包装线程对象</p>
+<h5 id="1、函数式：调用调用thread模块中的start-new-thread-函数来产生新线程。如下例："><a href="#1、函数式：调用调用thread模块中的start-new-thread-函数来产生新线程。如下例：" class="headerlink" title="1、函数式：调用调用thread模块中的start_new_thread()函数来产生新线程。如下例："></a>1、函数式：调用调用thread模块中的start_new_thread()函数来产生新线程。如下例：</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> time</div><div class="line"><span class="keyword">import</span> thread</div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">timer</span><span class="params">(no, interval)</span>:</span></div><div class="line">    cnt = <span class="number">0</span></div><div class="line">    <span class="keyword">while</span> cnt &lt; <span class="number">10</span>:</div><div class="line">        print(<span class="string">"Thread :(%d) Time:%s \n"</span> % (no, time.ctime()))</div><div class="line">        time.sleep(interval)</div><div class="line">        cnt += <span class="number">1</span></div><div class="line">    thread.exit_thread()</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">test</span><span class="params">()</span>:</span></div><div class="line">    thread.start_new_thread(timer, (<span class="number">1</span>,<span class="number">1</span>))</div><div class="line">    thread.start_new_thread(timer, (<span class="number">1</span>,<span class="number">2</span>))</div><div class="line"><span class="keyword">if</span> __name__ == <span class="string">"__main__"</span>:</div><div class="line">    test()</div></pre></td></tr></table></figure>
+<p>上面的例子定义了一个线程函数timer，它打印出10条时间记录后退出，每次打印的间隔由interval参数决定，thread.start_new_thread(function, args[, kwargs])的第一个参数是线程函数（本例中的timer方法）第二个参数是传递给线程函数的参数，它必须是tuple类型，kwargs是可选参数。</p>
+<p>线程的结束可以等待线程自然结束，也可以在线程函数中调用，thread.exit()或thread.exit_thread()方法</p>
+<h5 id="2、创建treading-Thread的子类来包装一个线程对象，如下例："><a href="#2、创建treading-Thread的子类来包装一个线程对象，如下例：" class="headerlink" title="2、创建treading.Thread的子类来包装一个线程对象，如下例："></a>2、创建treading.Thread的子类来包装一个线程对象，如下例：</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> threading</div><div class="line"><span class="keyword">import</span> time</div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">timer</span><span class="params">(threading.Thread)</span>:</span></div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, num, interval)</span>:</span></div><div class="line">        threading.Thread.__init__(self)</div><div class="line">        self.thread_num = num</div><div class="line">        self.interval = interval</div><div class="line">        self.thread_stop = <span class="keyword">False</span></div><div class="line">    </div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">run</span><span class="params">(self)</span>:</span></div><div class="line">        <span class="keyword">while</span> <span class="keyword">not</span> self.thread_stop:</div><div class="line">            print(<span class="string">"Thread Object(%d), Time:%s \n"</span> % (self.thread_num, time.ctime()))</div><div class="line">            time.sleep(self.interval)</div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">stop</span><span class="params">(self)</span>:</span></div><div class="line">        self.thread_stop = <span class="keyword">True</span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">test</span><span class="params">()</span>:</span></div><div class="line">    thread1 = timer(<span class="number">1</span>,<span class="number">1</span>)</div><div class="line">    thread2 = timer(<span class="number">2</span>,<span class="number">2</span>)</div><div class="line">    thread1.start()</div><div class="line">    thread2.start()</div><div class="line">    time.sleep(<span class="number">10</span>)</div><div class="line">    thread1.stop()</div><div class="line">    thread2.stop()</div><div class="line">    <span class="keyword">return</span></div><div class="line"></div><div class="line"><span class="keyword">if</span> __name__ == <span class="string">"__main__"</span>:</div><div class="line">    test()</div></pre></td></tr></table></figure>
+<p>就我个人而言，比较喜欢第二种方式，即创建自己的线程类，必要时重写threading.Thread类方法，线程的控制可以由自己定制</p>
+<p>threading.Thread类的使用：<br>1.在自己的线程类的 __init__ 里调用.threading.Thread.__init__(self, name=threadname)<br>Threadname为线程的名字<br>2.run(), 通常需要重写，编写代码实现所需要的功能<br>3.geName(),获得线程对象名称<br>4.setName(),设置线程对象的名称<br>5.start(),启动线程<br>6.join([timeout]),等待另一线程结束后再运行<br>7.setDaemon(bool),设置子线程是否随主线程一起结束，必须在start()之前调用。默认为False<br>8.isDaemon(),判断线程是否随主线程一起结束<br>9.isAlive(),检查线程是否在其中。<br>    此外threading模块本身也提供了很多方法和其他的类，可以帮助我们使用和管理线程。可以参看<a href="http://www.python.org/doc/2.5.2/lib/module-threading.html" target="_blank" rel="external">http://www.python.org/doc/2.5.2/lib/module-threading.html</a> 。  </p>
+<p>假设两个线程对象t1和t2都要对num=0进行增1运算，t1和t2都各对num修改10次，num的最终结果应该为20。但是由于是多线程访问，可能出现下面的情况：在num=0时，t1取得num=0。系统此时把t1调度为”sleeping”状态，把t2转换为”running”状态，t2页获得num=0。然后t2对得到的值进行加1并赋给num，使得num=1。然后系统又把t2调度为”sleeping”，把t1转为”running”。线程t1又把它之前得到的0加1后赋值给num。这样，明明t1和t2都完成了1次加1工作，但结果仍然是num=1。  </p>
+<pre><code>上面的case描述了多线程情况下最常见的问题之一：数据共享。当多个线程都要去修改某一个共享数据的时候，我们需要对数据访问进行同步。  
+</code></pre><p>1、简单的同步<br>最简单的同步机制就是“锁”。锁对象由threading.RLock类创建。线程可以使用锁的acquire()方法获得锁，这样锁就进入“locked”状态。每次只有一个线程可以获得锁。如果当另一个线程试图获得这个锁的时候，就会被系统变为“blocked”状态，直到那个拥有锁的线程调用锁的release()方法来释放锁，这样锁就会进入“unlocked”状态。“blocked”状态的线程就会收到一个通知，并有权利获得锁。如果多个线程处于“blocked”状态，所有线程都会先解除“blocked”状态，然后系统选择一个线程来获得锁，其他的线程继续沉默（“blocked”）。<br>    Python中的thread模块和Lock对象是Python提供的低级线程控制工具，使用起来非常简单。如下例所示：  </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> thread </div><div class="line"><span class="keyword">import</span> time</div><div class="line">mylock = thread.allocate_lock()   <span class="comment"># AAllocate a lock</span></div><div class="line">num = <span class="number">0</span>   <span class="comment"># Share resource</span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">add_num</span><span class="params">(name)</span>:</span></div><div class="line">    <span class="keyword">global</span> num </div><div class="line">    <span class="keyword">while</span> <span class="keyword">True</span>:</div><div class="line">        mylock.acquire()</div><div class="line">        print(<span class="string">"Thread %s locked! num=%s"</span> % (name, str(num)))</div><div class="line">        <span class="keyword">if</span> num &gt;= <span class="number">5</span>:</div><div class="line">            print(<span class="string">"Thread %s released! num=%s"</span> % (name, str(num)))</div><div class="line">            mylock.release()</div><div class="line">            thread.exit_thread()</div><div class="line">        num+=<span class="number">1</span></div><div class="line">        print(<span class="string">"Thread %s released! num=%s"</span> % (name, str(num)))</div><div class="line">        mylock.release()</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">test</span><span class="params">()</span>:</span></div><div class="line">    thread.start_new_thread(add_num, (<span class="string">'A'</span>,))</div><div class="line">    thread.start_new_thread(add_num, (<span class="string">'B'</span>,))</div><div class="line"></div><div class="line"><span class="keyword">if</span> __name__ == <span class="string">"__main__"</span>:</div><div class="line">    test()</div></pre></td></tr></table></figure>
+<p>我们把修改共享数据的代码成为“临界区”。必须将所有“临界区”都封闭在同一个锁对象的acquire和release之间。  </p>
+<p>2、  条件同步  </p>
+<p>锁只能提供最基本的同步。假如只在发生某些事件时才访问一个“临界区”，这时需要使用条件变量Condition。  </p>
+<p>Condition对象是对Lock对象的包装，在创建Condition对象时，其构造函数需要一个Lock对象作为参数，如果没有这个Lock对象参数，Condition将在内部自行创建一个Rlock对象。在Condition对象上，当然也可以调用acquire和release操作，因为内部的Lock对象本身就支持这些操作。但是Condition的价值在于其提供的wait和notify的语义。  </p>
+<p>条件变量是如何工作的呢？首先一个线程成功获得一个条件变量后，调用此条件变量的wait()方法会导致这个线程释放这个锁，并进入“blocked”状态，直到另一个线程调用同一个条件变量的notify()方法来唤醒那个进入“blocked”状态的线程。如果调用这个条件变量的notifyAll()方法的话就会唤醒所有的在等待的线程。  </p>
+<p>如果程序或者线程永远处于“blocked”状态的话，就会发生死锁。所以如果使用了锁、条件变量等同步机制的话，一定要注意仔细检查，防止死锁情况的发生。对于可能产生异常的临界区要使用异常处理机制中的finally子句来保证释放锁。等待一个条件变量的线程必须用notify()方法显式的唤醒，否则就永远沉默。保证每一个wait()方法调用都有一个相对应的notify()调用，当然也可以调用notifyAll()方法以防万一。  </p>
+<p>生产者与消费者问题是典型的同步问题。这里简单介绍两种不同的实现方法。  </p>
+<p>1，  条件变量  </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> threading  </div><div class="line"></div><div class="line"><span class="keyword">import</span> time  </div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Producer</span><span class="params">(threading.Thread)</span>:</span>  </div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, t_name)</span>:</span>  </div><div class="line"></div><div class="line">        threading.Thread.__init__(self, name=t_name)  </div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">run</span><span class="params">(self)</span>:</span>  </div><div class="line"></div><div class="line">        <span class="keyword">global</span> x  </div><div class="line"></div><div class="line">        con.acquire()  </div><div class="line"></div><div class="line">        <span class="keyword">if</span> x &gt; <span class="number">0</span>:  </div><div class="line"></div><div class="line">            con.wait()  </div><div class="line"></div><div class="line">        <span class="keyword">else</span>:  </div><div class="line"></div><div class="line">            <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">5</span>):  </div><div class="line"></div><div class="line">                x=x+<span class="number">1</span>  </div><div class="line"></div><div class="line">                <span class="keyword">print</span> <span class="string">"producing..."</span> + str(x)  </div><div class="line"></div><div class="line">            con.notify()  </div><div class="line"></div><div class="line">        <span class="keyword">print</span> x  </div><div class="line"></div><div class="line">        con.release()  </div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Consumer</span><span class="params">(threading.Thread)</span>:</span>  </div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, t_name)</span>:</span>  </div><div class="line"></div><div class="line">        threading.Thread.__init__(self, name=t_name)  </div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">run</span><span class="params">(self)</span>:</span>  </div><div class="line"></div><div class="line">        <span class="keyword">global</span> x  </div><div class="line"></div><div class="line">        con.acquire()  </div><div class="line"></div><div class="line">        <span class="keyword">if</span> x == <span class="number">0</span>:  </div><div class="line"></div><div class="line">            <span class="keyword">print</span> <span class="string">'consumer wait1'</span>  </div><div class="line"></div><div class="line">            con.wait()  </div><div class="line"></div><div class="line">        <span class="keyword">else</span>:  </div><div class="line"></div><div class="line">            <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">5</span>):  </div><div class="line"></div><div class="line">                x=x<span class="number">-1</span>  </div><div class="line"></div><div class="line">                <span class="keyword">print</span> <span class="string">"consuming..."</span> + str(x)  </div><div class="line"></div><div class="line">            con.notify()  </div><div class="line"></div><div class="line">        <span class="keyword">print</span> x  </div><div class="line"></div><div class="line">        con.release()  </div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line">con = threading.Condition()  </div><div class="line"></div><div class="line">x=<span class="number">0</span>  </div><div class="line"></div><div class="line"><span class="keyword">print</span> <span class="string">'start consumer'</span>  </div><div class="line"></div><div class="line">c=Consumer(<span class="string">'consumer'</span>)  </div><div class="line"></div><div class="line"><span class="keyword">print</span> <span class="string">'start producer'</span>  </div><div class="line"></div><div class="line">p=Producer(<span class="string">'producer'</span>)  </div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line">p.start()  </div><div class="line"></div><div class="line">c.start()  </div><div class="line"></div><div class="line">p.join()  </div><div class="line"></div><div class="line">c.join()  </div><div class="line"></div><div class="line"><span class="keyword">print</span> x</div></pre></td></tr></table></figure>
+<p>上面的例子中，在初始状态下，Consumer处于wait状态，Producer连续生产（对x执行增1操作）5次后，notify正在等待的Consumer。Consumer被唤醒开始消费（对x执行减1操作）  </p>
+<p>2，  同步队列  </p>
+<p>Python中的Queue对象也提供了对线程同步的支持。使用Queue对象可以实现多个生产者和多个消费者形成的FIFO的队列。  </p>
+<p>生产者将数据依次存入队列，消费者依次从队列中取出数据。  </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> Queue <span class="keyword">import</span> Queue  </div><div class="line">  </div><div class="line"><span class="keyword">import</span> random  </div><div class="line">  </div><div class="line"><span class="keyword">import</span> threading  </div><div class="line">  </div><div class="line"><span class="keyword">import</span> time  </div><div class="line">  </div><div class="line">   </div><div class="line">  </div><div class="line"><span class="comment">#Producer thread  </span></div><div class="line">  </div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Producer</span><span class="params">(threading.Thread)</span>:</span>  </div><div class="line">  </div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, t_name, queue)</span>:</span>  </div><div class="line">  </div><div class="line">        threading.Thread.__init__(self, name=t_name)  </div><div class="line">  </div><div class="line">        self.data=queue  </div><div class="line">  </div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">run</span><span class="params">(self)</span>:</span>  </div><div class="line">  </div><div class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">5</span>):  </div><div class="line">  </div><div class="line">            <span class="keyword">print</span> <span class="string">"%s: %s is producing %d to the queue!\n"</span> %(time.ctime(), self.getName(), i)  </div><div class="line">  </div><div class="line">            self.data.put(i)  </div><div class="line">  </div><div class="line">            time.sleep(random.randrange(<span class="number">10</span>)/<span class="number">5</span>)  </div><div class="line">  </div><div class="line">        <span class="keyword">print</span> <span class="string">"%s: %s finished!"</span> %(time.ctime(), self.getName())  </div><div class="line">  </div><div class="line">   </div><div class="line">  </div><div class="line"><span class="comment">#Consumer thread  </span></div><div class="line">  </div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Consumer</span><span class="params">(threading.Thread)</span>:</span>  </div><div class="line">  </div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, t_name, queue)</span>:</span>  </div><div class="line">  </div><div class="line">        threading.Thread.__init__(self, name=t_name)  </div><div class="line">  </div><div class="line">        self.data=queue  </div><div class="line">  </div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">run</span><span class="params">(self)</span>:</span>  </div><div class="line">  </div><div class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">5</span>):  </div><div class="line">  </div><div class="line">            val = self.data.get()  </div><div class="line">  </div><div class="line">            <span class="keyword">print</span> <span class="string">"%s: %s is consuming. %d in the queue is consumed!\n"</span> %(time.ctime(), self.getName(), val)  </div><div class="line">  </div><div class="line">            time.sleep(random.randrange(<span class="number">10</span>))  </div><div class="line">  </div><div class="line">        <span class="keyword">print</span> <span class="string">"%s: %s finished!"</span> %(time.ctime(), self.getName())  </div><div class="line">  </div><div class="line">   </div><div class="line">  </div><div class="line"><span class="comment">#Main thread  </span></div><div class="line">  </div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">()</span>:</span>  </div><div class="line">  </div><div class="line">    queue = Queue()  </div><div class="line">  </div><div class="line">    producer = Producer(<span class="string">'Pro.'</span>, queue)  </div><div class="line">  </div><div class="line">    consumer = Consumer(<span class="string">'Con.'</span>, queue)  </div><div class="line">  </div><div class="line">    producer.start()  </div><div class="line">  </div><div class="line">    consumer.start()  </div><div class="line">  </div><div class="line">    producer.join()  </div><div class="line">  </div><div class="line">    consumer.join()  </div><div class="line">  </div><div class="line">    <span class="keyword">print</span> <span class="string">'All threads terminate!'</span>  </div><div class="line">  </div><div class="line">   </div><div class="line">  </div><div class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:  </div><div class="line">  </div><div class="line">    main()</div></pre></td></tr></table></figure>
+<p>在上面的例子中，Producer在随机的时间内生产一个“产品”，放入队列中。Consumer发现队列中有了“产品”，就去消费它。本例中，由于Producer生产的速度快于Consumer消费的速度，所以往往Producer生产好几个“产品”后，Consumer才消费一个产品。  </p>
+<p>Queue模块实现了一个支持多producer和多consumer的FIFO队列。当共享信息需要安全的在多线程之间交换时，Queue非常有用。Queue的默认长度是无限的，但是可以设置其构造函数的maxsize参数来设定其长度。Queue的put方法在队尾插入，该方法的原型是：  </p>
+<p>put( item[, block[, timeout]])  </p>
+<p>如果可选参数block为true并且timeout为None（缺省值），线程被block，直到队列空出一个数据单元。如果timeout大于0，在timeout的时间内，仍然没有可用的数据单元，Full exception被抛出。反之，如果block参数为false（忽略timeout参数），item被立即加入到空闲数据单元中，如果没有空闲数据单元，Full exception被抛出。  </p>
+<p>Queue的get方法是从队首取数据，其参数和put方法一样。如果block参数为true且timeout为None（缺省值），线程被block，直到队列中有数据。如果timeout大于0，在timeout时间内，仍然没有可取数据，Empty exception被抛出。反之，如果block参数为false（忽略timeout参数），队列中的数据被立即取出。如果此时没有可取数据，Empty exception也会被抛出。  </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>
+
+        </div>
+        <footer class="article-footer">
+            
+
+
+
+    <a data-url="http://geniustesda.github.io/2017/11/20/python多线程/" data-id="cja8bj30p0001rovio579zvpy" class="article-share-link"><i class="fa fa-share"></i>Compartir</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
+    </div>
+</article>
+
+    <section id="comments">
+    
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+    
+    </section>
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>seguir:</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="twitter" href="/" target="_blank">
+                        <i class="icon fa fa-twitter"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="facebook" href="/" target="_blank">
+                        <i class="icon fa fa-facebook"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="google-plus" href="/" target="_blank">
+                        <i class="icon fa fa-google-plus"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/ppoffice/hexo-theme-hueman" target="_blank">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="weibo" href="/" target="_blank">
+                        <i class="icon fa fa-weibo"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="rss" href="/" target="_blank">
+                        <i class="icon fa fa-rss"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/2017/08/17/初学Git命令/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">antic</strong>
+        <p class="article-nav-title"></p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">recents</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/11/20/python多线程/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2017/11/20/python多线程/" class="title"></a></p>
+                            <p class="item-date"><time datetime="2017-11-20T14:55:34.379Z" itemprop="datePublished">2017-11-20</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/08/17/初学Git命令/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2017/08/17/初学Git命令/" class="title"></a></p>
+                            <p class="item-date"><time datetime="2017-08-17T12:15:01.567Z" itemprop="datePublished">2017-08-17</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/08/06/Python语言特性/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2017/08/06/Python语言特性/" class="title"></a></p>
+                            <p class="item-date"><time datetime="2017-08-06T10:16:35.189Z" itemprop="datePublished">2017-08-06</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/07/31/hello-world/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2017/07/31/hello-world/" class="title">Hello World</a></p>
+                            <p class="item-date"><time datetime="2017-07-30T16:17:38.329Z" itemprop="datePublished">2017-07-31</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">arxius</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/11/">November 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a><span class="archive-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+
+            
+                
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">links</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="http://hexo.io">Hexo</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2017 Mr.hu</p>
+                <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+        
+    
+    <script>
+    var disqus_shortname = 'hexo-theme-hueman';
+    
+    
+    var disqus_url = 'http://geniustesda.github.io/2017/11/20/python多线程/';
+    
+    (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+
+
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>
